@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -85,10 +86,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogf-Pf-ltX">
-                                <rect key="frame" x="130" y="155" width="154" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogf-Pf-ltX">
+                                <rect key="frame" x="130" y="158" width="154" height="67"/>
                                 <color key="backgroundColor" red="0.20314180850982666" green="0.4787943959236145" blue="0.36124011874198914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="154" id="Yno-SC-8o4"/>
+                                    <constraint firstAttribute="height" constant="67" id="iVb-de-g9X"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="New Post">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -100,6 +104,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SEy-Xg-21e"/>
                         <color key="backgroundColor" red="0.3715498149394989" green="0.82232511043548584" blue="0.59112095832824707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ogf-Pf-ltX" firstAttribute="top" secondItem="SEy-Xg-21e" secondAttribute="top" constant="70" id="1Fk-qf-AUu"/>
+                            <constraint firstItem="ogf-Pf-ltX" firstAttribute="centerX" secondItem="HPY-od-e1l" secondAttribute="centerX" id="pzm-DZ-1eB"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="User Feed" id="dHM-WK-V3S"/>
                 </viewController>
@@ -117,15 +125,40 @@
                         <viewLayoutGuide key="safeArea" id="AmU-gh-N5Y"/>
                         <color key="backgroundColor" red="0.41383922100067139" green="0.90054851770401001" blue="0.56753450632095337" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="New Post" id="N8e-Xj-XWw"/>
+                    <navigationItem key="navigationItem" title="New Post" id="N8e-Xj-XWw">
+                        <barButtonItem key="rightBarButtonItem" image="info.circle.fill" catalog="system" id="lhs-3y-rXV">
+                            <connections>
+                                <segue destination="gtw-EE-Zs6" kind="presentation" id="uP0-Yv-7lE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CSe-4Q-WK2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1141" y="-333"/>
         </scene>
+        <!--InfoVIewController-->
+        <scene sceneID="va0-52-cme">
+            <objects>
+                <viewController title="InfoVIewController" id="gtw-EE-Zs6" sceneMemberID="viewController">
+                    <view key="view" alpha="0.80000000000000004" contentMode="scaleToFill" id="gCk-X8-cBj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="emN-Eu-xap"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Mh-cO-O6h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1945" y="-333"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="info.circle.fill" catalog="system" width="128" height="121"/>
         <image name="person.crop.rectangle.fill" catalog="system" width="128" height="93"/>
         <image name="text.bubble.fill" catalog="system" width="128" height="110"/>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
