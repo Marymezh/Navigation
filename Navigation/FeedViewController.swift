@@ -16,16 +16,16 @@ class FeedViewController: UIViewController {
         var title: String
     }
 
-    var newPost = Post(title: "Новый пост")
+    var newPost = Post(title: "New Post")
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard segue.identifier == "newPost" else {
+        guard segue.identifier == "showPostViewController " else {
             return
         }
         guard let vc = segue.destination as? PostViewController else {
             return
         }
-        vc.title = "Новый преновый пост"
+        vc.title = "The Very New Post"
     }
 }
 
