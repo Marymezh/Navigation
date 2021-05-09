@@ -98,7 +98,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="U4r-wG-dkP" kind="show" id="0pA-ea-FYy"/>
+                                    <segue destination="U4r-wG-dkP" kind="show" identifier="newPost" id="0pA-ea-FYy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -140,17 +140,38 @@
         <!--InfoVIewController-->
         <scene sceneID="va0-52-cme">
             <objects>
-                <viewController title="InfoVIewController" id="gtw-EE-Zs6" sceneMemberID="viewController">
+                <viewController title="InfoVIewController" id="gtw-EE-Zs6" customClass="InfoViewController" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" alpha="0.80000000000000004" contentMode="scaleToFill" id="gCk-X8-cBj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWL-Qu-dAf">
+                                <rect key="frame" x="132" y="376" width="150" height="90"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="a8S-1K-Kp7"/>
+                                    <constraint firstAttribute="height" constant="90" id="l5s-G2-zcx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="ALERT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tap:" destination="gtw-EE-Zs6" eventType="touchUpInside" id="ZEZ-xI-8tK"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="emN-Eu-xap"/>
                         <color key="backgroundColor" systemColor="systemGray4Color"/>
+                        <constraints>
+                            <constraint firstItem="QWL-Qu-dAf" firstAttribute="centerY" secondItem="gCk-X8-cBj" secondAttribute="centerY" id="2ed-bx-kd6"/>
+                            <constraint firstItem="QWL-Qu-dAf" firstAttribute="centerX" secondItem="gCk-X8-cBj" secondAttribute="centerX" id="AcY-rd-8mx"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Mh-cO-O6h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1945" y="-333"/>
+            <point key="canvasLocation" x="1944.9275362318842" y="-333.48214285714283"/>
         </scene>
     </scenes>
     <resources>
