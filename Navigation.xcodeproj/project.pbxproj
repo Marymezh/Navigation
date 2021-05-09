@@ -15,6 +15,7 @@
 		CE2FD02E2647D64B00FC848C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2FD02C2647D64B00FC848C /* LaunchScreen.storyboard */; };
 		CE2FD0372647D9E600FC848C /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2FD0362647D9E600FC848C /* FeedViewController.swift */; };
 		CE2FD03A2647D9F500FC848C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2FD0392647D9F500FC848C /* ProfileViewController.swift */; };
+		CE2FD03D2647DD5400FC848C /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2FD03C2647DD5400FC848C /* PostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CE2FD02F2647D64B00FC848C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE2FD0362647D9E600FC848C /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		CE2FD0392647D9F500FC848C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CE2FD03C2647DD5400FC848C /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				CE2FD0232647D64600FC848C /* SceneDelegate.swift */,
 				CE2FD0362647D9E600FC848C /* FeedViewController.swift */,
 				CE2FD0252647D64600FC848C /* ViewController.swift */,
+				CE2FD03C2647DD5400FC848C /* PostViewController.swift */,
 				CE2FD0392647D9F500FC848C /* ProfileViewController.swift */,
 				CE2FD0272647D64600FC848C /* Main.storyboard */,
 				CE2FD02A2647D64B00FC848C /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2FD03D2647DD5400FC848C /* PostViewController.swift in Sources */,
 				CE2FD0262647D64600FC848C /* ViewController.swift in Sources */,
 				CE2FD0222647D64600FC848C /* AppDelegate.swift in Sources */,
 				CE2FD03A2647D9F500FC848C /* ProfileViewController.swift in Sources */,

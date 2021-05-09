@@ -53,7 +53,7 @@
                         <viewLayoutGuide key="safeArea" id="igt-5d-Pac"/>
                         <color key="backgroundColor" red="0.33473974466323853" green="0.81747549772262573" blue="0.97706204652786255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="x29-eO-NcJ"/>
+                    <navigationItem key="navigationItem" title="User Profile" id="x29-eO-NcJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G35-Kt-oxL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -84,14 +84,44 @@
                     <view key="view" contentMode="scaleToFill" id="HPY-od-e1l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogf-Pf-ltX">
+                                <rect key="frame" x="130" y="155" width="154" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.20314180850982666" green="0.4787943959236145" blue="0.36124011874198914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="New Post">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="U4r-wG-dkP" kind="show" id="0pA-ea-FYy"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="SEy-Xg-21e"/>
                         <color key="backgroundColor" red="0.3715498149394989" green="0.82232511043548584" blue="0.59112095832824707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="dHM-WK-V3S"/>
+                    <navigationItem key="navigationItem" title="User Feed" id="dHM-WK-V3S"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hIA-yA-qcb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="355" y="-333"/>
+            <point key="canvasLocation" x="353.62318840579712" y="-333.48214285714283"/>
+        </scene>
+        <!--PostViewController-->
+        <scene sceneID="S2M-Ap-eGW">
+            <objects>
+                <viewController title="PostViewController" id="U4r-wG-dkP" customClass="PostViewController" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1jM-qY-LoW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="AmU-gh-N5Y"/>
+                        <color key="backgroundColor" red="0.41383922100067139" green="0.90054851770401001" blue="0.56753450632095337" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="New Post" id="N8e-Xj-XWw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CSe-4Q-WK2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1141" y="-333"/>
         </scene>
     </scenes>
     <resources>
