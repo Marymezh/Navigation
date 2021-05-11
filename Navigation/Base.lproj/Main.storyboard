@@ -98,7 +98,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="U4r-wG-dkP" kind="show" identifier="showPostViewController " id="0pA-ea-FYy"/>
+                                    <segue destination="U4r-wG-dkP" kind="show" identifier="showPVC" id="0pA-ea-FYy"/>
                                 </connections>
                             </button>
                         </subviews>
