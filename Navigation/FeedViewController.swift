@@ -12,18 +12,14 @@ class FeedViewController: UIViewController {
         super.viewDidLoad()
     }
     
-   
-
-    var newPost: Post = Post(title: "This is a very new Post")
+    let newPost: Post = Post(title: "This is a very new Post")
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard segue.identifier == "showPVC" else {
+        guard segue.identifier == "showPVC", let destination = segue.destination as? PostViewController else {
             return
         }
-        guard let destination = segue.destination as? PostViewController else {
-            return
-        }
-        destination.newPostGreen = newPost.self
+        
+        destination.newPostGreen = newPost
     }
 }
 
