@@ -10,12 +10,12 @@ import UIKit
 class PostViewController: UIViewController {
     
     
-    var newTitle: FeedViewController.Post?
+   var newPostGreen: Post?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = newTitle?.title
+        title = newPostGreen?.title
         
     }
 }
